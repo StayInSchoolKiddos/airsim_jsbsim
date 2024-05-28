@@ -1,11 +1,15 @@
+#!/usr/bin/env python3
+
 import airsim 
 import numpy as np
 import os 
 import pprint
-import time as time 
+import time as time
+
+from airsim_jsbsim.jsbsim_backend.aircraft import Aircraft, x8
+
 """
-This is a toy script to test the connection to AirSim and get the camera info
-Trying to figure out how the api works
+This is a toy script to test the connection to AirSim to figure out how to move the camera
 https://microsoft.github.io/AirSim/image_apis/
 """
 

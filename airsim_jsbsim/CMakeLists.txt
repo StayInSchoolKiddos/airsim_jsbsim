@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(airsim_sensor)
+project(airsim_jsbsim)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -35,13 +35,11 @@ find_package(rosidl_default_generators REQUIRED)
 #   DESTINATION lib/${PROJECT_NAME}
 # )
 
-
-
 # Install Python modules
 ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
-  scripts/airsim_camera_node.py
+  scripts/airsim_jsbsim_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()

@@ -1,5 +1,5 @@
-#  Airsim Sensor
-This repo is used to wrap and interface with ROS 2 using Airsim's camera and lidar, this is done since the airsom_ros_pkgs require you to be in a Drone or Car. There is no support for Computer Vision Mode
+#  Airsim JSBSim
+This repo is used to interface Airsim with ROS2, this is done by running JSBSim on the backend and using the MovePosition api from airsim to move the camera pawn, this mode requires you to be in Computer Vision mode.
 
 ## Install dependencies
 - Make sure to install Airsim and Unreal Engine 
